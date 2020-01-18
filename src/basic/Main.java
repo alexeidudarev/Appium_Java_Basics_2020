@@ -63,9 +63,7 @@ public class Main {
 		driver.findElementById("com.meizu.flyme.calculator:id/plus").click();
 		driver.findElementById("com.meizu.flyme.calculator:id/digit3").click();
 		driver.findElementById("com.meizu.flyme.calculator:id/eq").click();
-		WebElement el = driver.findElementById("com.meizu.flyme.calculator:id/edit_text");
-		el.click();
-		String result = el.getText();
+		String result = driver.findElementById("com.meizu.flyme.calculator:id/edit_text").getText();
 		Thread.sleep(6000);
 
 		System.out.println("the result is :"+result);
